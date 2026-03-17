@@ -11,13 +11,16 @@
 	 <p>wojte mowi ze jewt takim gejem i mowi ze ma tylko 60fps,</p>
 	 <p>pomocyniechcemisietegojuzczytacczemulektu</p>
     <p>pomovy oni grają w brawl stars i się przechwalają że mają energetyki😑</p>
-<button onclick="document.getElementById('muzyka').play()">
-    ▶️ Odtwórz muzykę
-</button>
+<button onclick="playMusic()">▶️ Odtwórz</button>
 
-<audio id="muzyka">
-    <source src="muzyka.mp3" type="audio/mpeg">
-</audio>
+<audio id="muzyka" src="muzyka.mp3"></audio>
+
+<script>
+function playMusic() {
+    var audio = document.getElementById("muzyka");
+    audio.play();
+}
+</script>
 
 <footer> stworzone na wf przez huberta i komara </footer>
 </body>
